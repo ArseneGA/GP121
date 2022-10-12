@@ -1,1 +1,42 @@
+"""
+classe
+"""
+L_spectateur = []
+L_artiste = []
 
+
+class Spectateur:
+    '''
+    création de la classe spectateur
+    '''
+    def __init__(self, name, first_name, age, email, number, artiste):
+        '''
+        création des attributs du spectateur
+        '''
+        name = self.name
+        first_name = self.first_name
+        age = int(self.age)
+        email = self.email
+        number = int(self.number)
+        artiste = self.artiste
+    
+
+class Artiste:
+    '''
+    création de la classe artiste 
+    '''
+    def __init___(self, name, first_name, age, email, number, chair_position, date, clock):
+        '''
+        création des attributs de l'artiste (chair_position à compléter
+        '''
+        name = self.name
+        first_name = self.first_name
+        age = int(self.age)
+        email = self.email
+        number = int(self.number)
+        date = int(self.date)
+        
+
+        
+        
+        
