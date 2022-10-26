@@ -73,6 +73,15 @@ T9.grid(column=8, row=6)
 T10=tk.Label(interface, text="mot de passe: ",highlightbackground="blue", fg="blue")
 T10.grid(column=8, row=7)
 
+#Ici se retrouvent les boutons
+bouton1 = tk.Button(interface, text = 'Valider', command = valider_art)
+bouton1.grid(column=3, row=4)
+bouton1 = tk.Button(interface, text = 'Valider', command = valider_spect)
+bouton1.grid(column=10, row=4)
+bouton1 = tk.Button(interface, text = 'Valider', command = valider_new_art)
+bouton1.grid(column=3, row=7)
+bouton1 = tk.Button(interface, text = 'Valider', command = valider_new_spect)
+bouton1.grid(column=10, row=7)
 
 
 interface.mainloop()
