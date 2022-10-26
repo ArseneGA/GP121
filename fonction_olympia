@@ -1,5 +1,15 @@
-def pas_artiste():
+"""
+fichier fonction
+"""
+
+def valider_art():
     pass
 
-def pas_spect():
+def valider_spect():
+    pass
+
+def valider_new_art():
+    pass
+
+def valider_new_spect():
     pass
