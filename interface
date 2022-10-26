@@ -1,0 +1,78 @@
+'''
+Interface Olympia
+'''
+
+import tkinter as tk
+from fonction_olympia import *
+interface = tk.Tk()
+interface.title("Olympia")
+
+label = tk.Label(interface, text="Salle de l'Olympia",font=("arial italic", 15))
+label.grid(column=5, row=1)
+
+#Ici se retrouve les commandes
+
+
+#là on note toutes les variables
+
+email_artiste = tk.StringVar()
+mdp_artiste = tk.StringVar()
+email_spect = tk.StringVar()
+mdp_spect = tk.StringVar()
+new_email_artiste = tk.StringVar()
+new_mdp_artiste = tk.StringVar()
+new_email_spect = tk.StringVar()
+new_mdp_spect = tk.StringVar()
+
+
+#ici se retrouvent toutes les entrees
+Entree = tk.Entry(interface, width=15, textvariable=email_artiste)
+Entree.grid(column=2, row=3)
+Entree1 = tk.Entry(interface, width=15, textvariable=mdp_artiste)
+Entree1.grid(column=2, row=4)
+Entree2 = tk.Entry(interface, width=15, textvariable=email_spect)
+Entree2.grid(column=9, row=3)
+Entree3 = tk.Entry(interface, width=15, textvariable=mdp_spect)
+Entree3.grid(column=9, row=4)
+
+Entree4 = tk.Entry(interface, width=15, textvariable=new_email_artiste)
+Entree4.grid(column=2, row=6)
+Entree5 = tk.Entry(interface, width=15, textvariable=new_mdp_artiste)
+Entree5.grid(column=2, row=7)
+Entree6 = tk.Entry(interface, width=15, textvariable=new_email_spect)
+Entree6.grid(column=9, row=6)
+Entree7 = tk.Entry(interface, width=15, textvariable=new_mdp_spect)
+Entree7.grid(column=9, row=7)
+
+#Ici se retrouvent les labels (les textes)
+T1= tk.Label(interface, text="Si vous êtes un artiste c'est par ici:", highlightbackground="blue", fg="blue" )
+T1.grid(column=2, row=2)
+T2= tk.Label(interface, text="Si vous êtes un spectateur c'est par ici:",highlightbackground="blue", fg="blue")
+T2.grid(column=9, row=2)
+
+T11= tk.Label(interface, text="Pas encore client :", highlightbackground="blue", fg="blue" )
+T11.grid(column=2, row=5)
+T12= tk.Label(interface, text="Pas encore client",highlightbackground="blue", fg="blue")
+T12.grid(column=9, row=5)
+
+T3= tk.Label(interface, text="email: ", highlightbackground="blue", fg="blue" )
+T3.grid(column=1, row=3)
+T4= tk.Label(interface, text="mot de passe: ",highlightbackground="blue", fg="blue")
+T4.grid(column=1, row=4)
+T5= tk.Label(interface, text="email: ", highlightbackground="blue", fg="blue" )
+T5.grid(column=8, row=3)
+T6= tk.Label(interface, text="mot de passe: ",highlightbackground="blue", fg="blue")
+T6.grid(column=8, row=4)
+
+T7= tk.Label(interface, text="email: ", highlightbackground="blue", fg="blue" )
+T7.grid(column=1, row=6)
+T8= tk.Label(interface, text="mot de passe: ",highlightbackground="blue", fg="blue")
+T8.grid(column=1, row=7)
+T9= tk.Label(interface, text="email: ", highlightbackground="blue", fg="blue" )
+T9.grid(column=8, row=6)
+T10=tk.Label(interface, text="mot de passe: ",highlightbackground="blue", fg="blue")
+T10.grid(column=8, row=7)
+
+
+
+interface.mainloop()
