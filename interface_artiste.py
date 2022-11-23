@@ -5,7 +5,7 @@ Created on Wed Oct 26 14:51:45 2022
 @author: Mai
 """
 import tkinter as tk
-
+import controller
 
 
 
@@ -57,6 +57,8 @@ entree6.grid(column=2, row=5)
 entree7 = tk.Entry(interface, width=15,textvariable=prenom)
 entree7.grid(column=2, row=4)
 
-
+submit = tk.Button(interface, text = 'Submit', command = controller.formulaireEnvoye).grid(row = 9, column = 3)
 
 interface.mainloop()
+
+controller.enregister_donnees_artiste(nom, prenom, numero_telephone, date, chair_position, prix_place)
